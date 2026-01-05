@@ -1,0 +1,46 @@
+<!--TASKMANAGER-->
+    <div class="window window-taskmanager">
+        <div class="titlebar-folder">
+            <span>Windows Skill Manager</span>
+            <div class="win-controls"><button>–</button><button>□</button><button>✕</button></div>
+        </div>
+        <div class="tm-tabs" role="tablist">
+            <button class="tm-tab active" data-panel="panel-web">Back-End</button>
+            <button class="tm-tab" data-panel="panel-back">Front-End</button>
+            <button class="tm-tab" data-panel="panel-db">Database</button>
+            <button class="tm-tab" data-panel="panel-tools">Dev Tools</button>
+        </div>
+        <div class="tm-header">
+            <div>Task</div>
+            <div>Status</div>
+        </div>
+        
+
+        <div id="panel-web" class="tm-panel active" role="tabpanel">
+            <div class="tm-row"><span>HTML5 / Semantics</span><span>Running</span></div>
+            <div class="tm-row"><span>CSS (Flex/Grid)</span><span>Running</span></div>
+            <div class="tm-row"><span>Bootstrap</span><span>Running</span></div>
+            <div class="tm-row"><span>TypeScript (UI)</span><span>Background</span></div>
+        </div>
+        <div id="panel-back" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>C# / .NET</span><span>Running</span></div>
+            <div class="tm-row"><span>ASP.NET Core MVC</span><span>Running</span></div>
+            <div class="tm-row"><span>Identity / Auth</span><span>On demand</span></div>
+            <div class="tm-row"><span>REST APIs</span><span>Running</span></div>
+        </div>
+        <div id="panel-db" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>SQL Server</span><span>Running</span></div>
+            <div class="tm-row"><span>EF Core / LINQ</span><span>Running</span></div>
+            <div class="tm-row"><span>Migrations & Seeding</span><span>Running</span></div>
+        </div>
+        <div id="panel-tools" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>Git / GitHub</span><span>Running</span></div>
+            <div class="tm-row"><span>Postman</span><span>Running</span></div>
+            <div class="tm-row"><span>VS / VS Code</span><span>Running</span></div>
+        </div>
+        <div class="tm-footer">
+            <span>Processes: 42</span>
+            <span>CPU Usage: 0%</span>
+            <span>Commit Charge: 611M / 2463M</span>
+        </div>
+    </div>

@@ -1,0 +1,88 @@
+:root {
+    /* Brand palette — tweak these first */
+    --bg: #0d1117;
+    /* page background (dark) */
+    --surface: #161b22;
+    /* cards/nav */
+    --text: #e6e6e6;
+    /* body text */
+    --muted: #a7b0b8;
+    /* secondary text */
+    --primary: #00aaff;
+    /* accents/buttons/links */
+    --primary-strong: #008ed1;
+    /* hover state */
+    --success: #0fd26a;
+    --warning: #ffb020;
+    --danger: #ff5c5c;
+    --radius: 14px;
+    /* global rounded */
+    --shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        to bottom, rgba(0,0,0,.2) 0, rgba(0,0,0,.2) 1px, transparent 2px
+    );
+    
+    pointer-events: none;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    color: #00ff66;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal {
+    width: 450px;
+    border: 2px solid #00ff66;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+    animation: flicker 0.15s infinite alternate;
+    text-align: right;
+}
+
+@keyframes flicker {
+    from { opacity: 0.97;}
+    to { opacity: 1;}
+}
+
+.line {
+    margin: 4px 0;
+    visibility: hidden;
+}
+
+.progress {
+    margin: 16px 0;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.blink {
+    animation: blink 1s steps(2, start) infinite;
+    text-align: center;
+    visibility: hidden;
+}
+
+@keyframes blink {
+    to { visibility: hidden;}
+}
+
+
+

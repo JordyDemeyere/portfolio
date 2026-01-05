@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    background: #111;
+    color: #eee;
+}
+
+.window-blue {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.projects {
+    width: auto;
+    margin: 0.5rem;
+}
+
+.window-blue-content {
+    justify-items: left;
+    margin: 0.5rem;
+}
+
+
+
+
+.window-cmd {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-top: 2px solid #C0C0C0;
+    border-left: 2px solid #C0C0C0;
+    border-bottom: 2px solid#C0C0C0;
+    border-right: 2px solid #C0C0C0;
+    border-width: 0.2em;
+}
+
+.window-cmd .animated {
+    color: #00ff66;
+    text-shadow: 0 0 8px #00ff66;
+    white-space: pre;
+}
+
+
+
+.window-taskmanager {
+    position: absolute;
+    width: 600px;
+    border-top: 2px solid #C0C0C0;
+    border-left: 2px solid #C0C0C0;
+    border-bottom: 2px solid#C0C0C0;
+    border-right: 2px solid #C0C0C0;
+    border-width: 0.2em;
+}
+
+.titlebar-cmd {
+    display: flex;
+    background: #C0C0C0;
+    color: black;
+    padding: 6px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.titlebar-cmd img {
+    vertical-align: baseline;
+    margin-bottom: -2px;
+}
+
+.titlebar-folder {
+    background: linear-gradient(90deg, #000083 20%, #0D7DC9 100%);
+    padding: 6px;
+    cursor: move;
+    user-select: none;
+    touch-action: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.titlebar-folder button {
+    background: #C0C0C0;
+    font-weight: bolder;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+
+.cmd-content {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    height: 255px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 0.5rem;
+}
+
+.win-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.win-controls button {
+    background: #C0C0C0;
+    font-weight: bolder;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.spacer {
+    height: 0.1em;
+    /* adjust manually for realistic gap */
+}
+
+
+/*TEST*/
+/* Tabs bar */
+.tm-tabs {
+    display: flex;
+    gap: 2px;
+    padding: 4px 6px;
+    background: #dcdcdc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.tm-tab {
+    padding: 3px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background: #e9e9e9;
+    border: 1px solid #bcbcbc;
+    border-bottom: none;
+}
+
+.tm-tab.active {
+    background: #ffffff;
+    position: relative;
+    top: 1px;
+}
+
+/* Header row */
+.tm-header {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    background: #efefef;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 4px 8px;
+}
+
+/* Panels */
+.tm-panel {
+    display: none;
+    background: #fff;
+    max-height: 260px;
+    overflow: auto;
+}
+
+.tm-panel.active {
+    display: block;
+}
+
+/* Rows – NO visible lines */
+.tm-row {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #000;
+}
+
+.tm-row:nth-child(even) {
+    background: #f8f8f8;
+    /* subtle alternating rows like XP */
+}
+
+.tm-row span:last-child {
+    justify-self: end;
+    color: #0a7a0a;
+    /* “Running” text in green */
+}
+
+/* Footer bar */
+.tm-footer {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    background: #efefef;
+    color: #000;
+    font-size: 11px;
+    border-top: 1px solid #bcbcbc;
+    padding: 5px 8px;
+}
+
+/* Make the window interior XP-white */
+.window-blue {
+    background: #fff;
+    color: #000;
+}

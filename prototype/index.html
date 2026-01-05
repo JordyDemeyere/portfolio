@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 97</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/draggable_Window.css">
+
+</head>
+
+<body>
+
+    <div class="desktop-body">
+
+        <div>
+            <div class="icon">
+                <button id="projects" href="/prototype/windows/folder.html"><img src="/prototype/img/projects.png"
+                        alt="Projects icon"></button>
+                <span>Projects</span>
+            </div>
+            <div class="icon">
+                <button id="cmd"><img src="/prototype/img/jordyExe.png" alt="man icon"></button>
+                <span>Jordy.Exe</span>
+            </div>
+            <div class="icon">
+                <a href="/assets/Cv Jordy Demeyere.pdf" download="My CV"><button><img src="/prototype/img/cv.png"
+                            alt="cv icon"></button></a>
+                <span>CV.pdf</span>
+            </div>
+            <div class="icon">
+                <button id="skills"><img src="/prototype/img/skills.png" alt="skills icon"></button>
+                <span>Skills</span>
+            </div>
+            <div class="icon">
+                <a href="mailto:jordy.demeyere123@hotmail.com"><button><img src="/prototype/img/contact.png"
+                            alt="contact icon"></button></a>
+                <span>Contact</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup" id="startPopUp" hidden="true">
+        <a href="/prototype/slaapstand.html"><img src="/prototype/img/sleep.png" alt="sleep button"></a>
+    </div>
+
+
+
+
+    <!--BLUE WINDOW-->
+    <div class="window window-blue" id="window-folder" hidden="true">
+        <div class="titlebar-folder">
+            <span>Projects</span>
+            <div class="win-controls">
+                <button id="close-folder">X</button>
+            </div>
+        </div>
+        <div class="window-blue-content">
+            <div class="icon">
+                <button id="library" href="/prototype/windows/folder.html"><img src="/prototype/img/book.png"
+                        alt="book icon"></button>
+                <span style="color: black;">Library</span>
+            </div>
+            <div class="icon">
+                <button id="casino" href="/prototype/windows/folder.html"><img src="/prototype/img/casino.png"
+                        alt="casino icon"></button>
+                <span style="color: black;">Casino.exe</span>
+            </div>
+            <div class="icon">
+                <button id="portfolio" href="/prototype/windows/folder.html"><img src="/prototype/img/portfolio.png"
+                        alt="web icon"></button>
+                <span style="color: black;">Portfolio</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Library WINDOW-->
+    <div class="window window-blue projects" id="window-library" hidden="true" style="justify-self: center;">
+        <div class="titlebar-folder">
+            <span>Library project</span>
+            <div class="win-controls">
+                <button id="close-library">X</button>
+            </div>
+        </div>
+
+        <div class="window-blue-content">
+
+            <div>
+                <!-- Screenshot -->
+                <h4>
+                    <a href="https://imgur.com/a/M68XHY7" target="_blank">Screenhots (Imgur album)</a>
+                </h4>
+
+                <!-- Short description -->
+                <p class="project-desc">
+                A school library management app (catalog, loans, returns, users). Built iteratively with a clean layered structure.
+                </p>
+
+                <!-- What works -->
+                <section class="project-section" aria-label="What works">
+                <h4 class="project-h">✔ What works</h4>
+                <ul class="project-list">
+                    <li>Catalog overview + detail pages</li>
+                    <li>Register loans and returns</li>
+                    <li>Basic validation + error handling</li>
+                </ul>
+                </section>
+
+                <!-- Next -->
+                <section class="project-section" aria-label="Next up">
+                <h4 class="project-h">⏭ Next</h4>
+                <ul class="project-list">
+                    <li>Reservation flow + queue rules</li>
+                    <li>Admin dashboard (roles + permissions)</li>
+                    <li>UI polish + mobile-friendly layout</li>
+                </ul>
+                </section>
+
+                <!-- Links -->
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/JordyDemeyere/LibraryApp.git" target="_blank" rel="noreferrer">
+                    🔗 View on GitHub
+                </a>
+
+            
+            </div>
+</div>
+
+
+        </div>
+        
+
+    </div>
+
+    <!--Casino WINDOW-->
+    <div class="window window-blue projects" id="window-casino" hidden="true" style="justify-self: center;">
+        <div class="titlebar-folder">
+            <span>Casino / blacjack project</span>
+            <div class="win-controls">
+                <button id="close-casino">X</button>
+            </div>
+        </div>
+        
+            <div class="window-blue-content">
+                
+                <!-- Short description -->
+                <p class="project-desc">
+                Early development of a blackjack game that's part of a bigger browser casino game.
+                </p>
+
+                <!-- What works -->
+                <section class="project-section" aria-label="What works">
+                <h4 class="project-h">✔ What works</h4>
+                <ul class="project-list">
+                    <li>Core Blackjack rules implemented (hit, stand, bust, blackjack)</li>
+                    <li>Card, Deck, Hand, Player, and Dealer modeled with proper classes</li>
+                    <li>Correct deck creation and shuffle logic</li>
+                    <li>Dealer behavior follows rules (draws until minimum threshold)</li>
+                    <li>Win, loss, and push evaluation handled correctly</li>
+                    <li>Game flow separated from UI logic (logic-first approach)</li>
+                    <li>Written in React + TypeScript (Vite-safe) without enums</li>
+                    <li>Code structured to be extendable, not hard-coded</li>
+                </ul>
+                </section>
+
+                <!-- Next -->
+                <section class="project-section" aria-label="Next up">
+                <h4 class="project-h">⏭ Next / in progress</h4>
+                <ul class="project-list">
+                    <li>Betting system (chips, wagers, payouts)</li>
+                    <li>Bankroll management across multiple rounds</li>
+                    <li>UI polish (visual feedback, animations, clarity)</li>
+                    <li>Strategy simulation (basic strategy / auto-play)</li>
+                    <li>Statistics tracking (win rate, expected value)</li>
+                    <li>Optional: split, double down, insurance rules</li>
+                    <li>Optional: backend persistence (sessions / stats)</li>
+
+                </ul>
+                </section>
+
+                <!-- Links -->
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/JordyDemeyere/LibraryApp.git" target="_blank" rel="noreferrer">
+                    🔗 View on GitHub
+                </a>
+
+            
+            </div>
+
+    </div>
+    </div>
+
+    <!--Portfolio WINDOW-->
+    <div class="window window-blue" id="window-portfolio" hidden="true" style="justify-self: center;">
+        <div class="titlebar-folder">
+            <span>Portfolio website</span>
+            <div class="win-controls">
+                <button id="close-portfolio">X</button>
+            </div>
+        </div>
+
+            <div class="window-blue-content">
+                
+                <!-- Short description -->
+                <p class="project-desc">
+                A portfolio website in the retro style of Windows 98. Showing of some of my skills and my personality.
+                </p>
+
+                <!-- What works -->
+                <section class="project-section" aria-label="What works">
+                <h4 class="project-h">✔ What works</h4>
+                <ul class="project-list">
+                    <li>Website loads entirely</li>
+                    <li>All icons have functionality</li>
+                    <li>Every window can be dragged and dropped</li>
+                    <li>Every window can be closed</li>
+                    <li>Taskmanager has different tabs for different skills</li>
+                    
+                </ul>
+                </section>
+
+                <!-- Next -->
+                <section class="project-section" aria-label="Next up">
+                <h4 class="project-h">⏭ Next / in progress</h4>
+                <ul class="project-list">
+                    <li>Sizing needs to be reworked</li>
+                    <li>Adding other projects</li>
+                    <li>Adding a picture slideshow in the website, making the external link redundant</li>
+                    <li>Updating sills / learning new skills</li>
+                    
+
+                </ul>
+                </section>
+
+                <!-- Links -->
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/JordyDemeyere/LibraryApp.git" target="_blank" rel="noreferrer">
+                    🔗 View on GitHub
+                </a>
+
+            
+            </div>
+
+    </div>
+
+
+
+
+    <!--CMD WINDOW-->
+    <div class="window window-cmd" id="window-cmd" hidden="true" style="justify-self: center;">
+        <div class="titlebar-cmd" id="titlebar-cmd">
+            <div>
+                <img src="/prototype/img/cmd.png" alt="cmd-logo">
+                <span>Administrator: C:\Windows\System32\cmd.exe</span>
+            </div>
+            <div class="win-controls">
+                <button id="close-cmd">X</button>
+            </div>
+        </div>
+        <div class="cmd-content">
+            <p>Microsoft Windows [Version 6.1.7600]</p>
+            <p>Copyright (c) 2009 Microsoft Corporation. All rights reserved.</p>
+            <p class="spacer"></p>
+            <p>C:\Windows\system32&gt;net user administrator /active:no</p>
+            <p>The command completed successfully.</p>
+            <p class="spacer"></p>
+            <p>C:\Windows\system32&gt; <span class="animated"></span></p>
+
+            <div id="about-me" hidden="true">
+                <p>
+                    <span style="color: #2a2aff;">
+                        Initializing system...<br>
+                        Loading profile: Jordy_Demeyere.exe<br>
+                        Accessing developer credentials...<br>
+                    </span>
+                    <span style="color: #8B0000;">----------------------------------------<br></span>
+                    <span style="color: #d40fd4;">
+                        Ik ben een enthousiaste junior .NET developer met een basis in C#, ASP.NET Core en
+                        webtechnologieën.<br>
+                        Ik leer zeer snel bij, denk oplossingsgericht en ik hou van projecten waarin techniek en
+                        samenwerking samenkomen.<br>
+                        Ik ben op zoek naar een kans om mijn kennis verder uit te bouwen en bij te dragen aan een sterk
+                        team.<br>
+                    </span>
+                    <span style="color: #8B0000;">----------------------------------------<br></span>
+                    System ready. Close the window now...
+                </p>
+            </div>
+            <div id="about-me-out"></div>
+
+        </div>
+    </div>
+
+    <!--TASKMANAGER-->
+    <div class="window window-taskmanager" id="window-taskmanager" hidden="true">
+        <div class="titlebar-folder">
+            <span>Windows Skill Manager</span>
+            <div class="win-controls"><button id="close-taskmanager">✕</button></div>
+        </div>
+        <div class="tm-tabs" role="tablist">
+            <button class="tm-tab active" data-panel="panel-web">Front-end</button>
+            <button class="tm-tab" data-panel="panel-back">Back-End</button>
+            <button class="tm-tab" data-panel="panel-db">Database</button>
+            <button class="tm-tab" data-panel="panel-tools">Dev Tools</button>
+        </div>
+        <div class="tm-header">
+            <div>Task</div>
+            <div>Status</div>
+        </div>
+
+
+        <div id="panel-web" class="tm-panel active" role="tabpanel">
+            <div class="tm-row"><span>HTML5 / Semantics</span><span>Running</span></div>
+            <div class="tm-row"><span>CSS (Flex/Grid)</span><span>Running</span></div>
+            <div class="tm-row"><span>Bootstrap</span><span>Running</span></div>
+            <div class="tm-row"><span>TypeScript (UI)</span><span>Background</span></div>
+        </div>
+        <div id="panel-back" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>C# / .NET</span><span>Running</span></div>
+            <div class="tm-row"><span>ASP.NET Core MVC</span><span>Running</span></div>
+            <div class="tm-row"><span>Identity / Auth</span><span>On demand</span></div>
+            <div class="tm-row"><span>REST APIs</span><span>Running</span></div>
+        </div>
+        <div id="panel-db" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>SQL Server</span><span>Running</span></div>
+            <div class="tm-row"><span>EF Core / LINQ</span><span>Running</span></div>
+            <div class="tm-row"><span>Migrations & Seeding</span><span>Running</span></div>
+        </div>
+        <div id="panel-tools" class="tm-panel" role="tabpanel">
+            <div class="tm-row"><span>Git / GitHub</span><span>Running</span></div>
+            <div class="tm-row"><span>Postman</span><span>Running</span></div>
+            <div class="tm-row"><span>VS / VS Code</span><span>Running</span></div>
+        </div>
+        <div class="tm-footer">
+            <span>Processes: 42</span>
+            <span>CPU Usage: 0%</span>
+            <span>Commit Charge: 611M / 2463M</span>
+        </div>
+    </div>
+
+
+
+
+    <div class="taskbar">
+
+        <button id="start">
+            <img src="/prototype/img/start.png" alt="start knop"><span> Start</span>
+        </button>
+
+        <button class="button-without-border">
+            <a href="/prototype/explorer.html"><img src="/prototype/img/explorerSmall.png" alt="explorerSmall"></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0" alt="song"><img
+                    src="/prototype/img/antenna.png" alt="explorerSmall"></a>
+        </button>
+
+        <div class="clock">
+
+            <button class="button-without-border" disabled>
+                <img src="/prototype/img/netwerk.png" alt="netwerk">
+                <img src="/prototype/img/luidspreker.png" alt="">
+            </button>
+
+            <span>4:04 AM</span>
+        </div>
+    </div>
+
+
+
+    <script src="/assets/js/popUp.js" defer></script>
+    <script src="/assets/js/window.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+</body>
+
+</html>

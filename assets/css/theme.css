@@ -1,0 +1,160 @@
+:root {
+    /* Brand palette — tweak these first */
+    --bg: #0d1117;
+    /* page background (dark) */
+    --surface: #161b22;
+    /* cards/nav */
+    --text: #e6e6e6;
+    /* body text */
+    --muted: #a7b0b8;
+    /* secondary text */
+    --primary: #00aaff;
+    /* accents/buttons/links */
+    --primary-strong: #008ed1;
+    /* hover state */
+    --success: #0fd26a;
+    --warning: #ffb020;
+    --danger: #ff5c5c;
+    --radius: 14px;
+    /* global rounded */
+    
+    --taskbar-h: 40px;
+}
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(135deg, #037c7c 0%, #008080 100%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desktop {
+    flex: 1;
+    position: relative;
+    padding: 1rem;
+}
+
+.desktop-body {
+    flex: 1;
+    display: grid;
+    position: relative;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: left;
+    padding: 1em;
+}
+
+.taskbar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+  height: var(--taskbar-h);
+  z-index: 1000; 
+    height: 40px;
+    background: #C0C0C0;
+    border-top: 2px solid #111;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    font-size: 0.9rem;
+}
+
+.taskbar span {
+    font-weight: bolder;
+}
+
+.taskbar img {
+    width: 24px;
+}
+
+.taskbar button {
+    background-color: transparent;
+    margin-right: 0.5em;
+}
+
+.button-without-border {
+    background-color: transparent;
+    border: transparent;
+}
+
+.button-without-border img {
+    width: 18px;
+    justify-items: left;
+}
+
+.clock {
+    margin-left: auto;
+    margin-right: 0.5em;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #404040;
+    border-top: 2px solid #404040;
+}
+
+.clock span {
+    color: black;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 0.5em;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    padding-inline-start: 0;
+}
+
+.icon img {
+    width: 38px;
+}
+
+.window-content {
+    height: 300px;
+    overflow-y: auto;
+    align-items: left;
+    justify-content: left;
+}
+
+.icon button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.popup {
+  width: 80px;
+  background:#C0C0C0;
+  border-radius: 6px;
+  position: absolute;
+  top: 85%;
+  left: 0.2%;
+  text-align: center;
+  color: #333;
+}
+
+.popup img {
+    height: 60px;
+    position: relative;
+    align-self:baseline;
+    
+}
+
+.popup button {
+    background: transparent;
+    border: transparent;
+}
