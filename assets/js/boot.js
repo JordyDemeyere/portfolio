@@ -12,13 +12,44 @@ const interval = setInterval( () => {
 }, 200);
 
 //Press ENTER to start
+// document.addEventListener('keydown', (e) => {
+//     if (e.key === 'Enter') {
+//         document.body.style.transition = 'opacity 1s ease';
+//         document.body.style.opacity = '0';
+//         setTimeout(() => {window.location.href = 'index.html'; }, 100)
+//     }
+// })
+
+let canStart = false;
+
+// Minimum boot time (3 seconds)
+setTimeout(() => {
+    canStart = true;
+}, 3000);
+
+function startPortfolio() {
+    if (!canStart) return; // ignore early input
+
+    document.body.style.transition = 'opacity 1s ease';
+    document.body.style.opacity = '0';
+
+    setTimeout(() => {
+        window.location.href = 'index.html';
+    }, 100);
+}
+
+// Keyboard
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        document.body.style.transition = 'opacity 1s ease';
-        document.body.style.opacity = '0';
-        setTimeout(() => {window.location.href = 'index.html'; }, 100)
+        startPortfolio();
     }
-})
+});
+
+// Mouse / touch
+document.addEventListener('click', () => {
+    startPortfolio();
+});
+
 
 //loading lines
 const lines = document.querySelectorAll('.line');
