@@ -129,8 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
         centerWindow(win);
         win.hidden = false;
 
-
-
         if (!cmdTypedStarted) {
             cmdTypedStarted = true;
             new Typed("#window-cmd .animated", {
@@ -226,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    ['cmd', 'folder', 'taskmanager', 'library', 'casino', 'portfolio'   ].forEach(name => {
+    ['cmd', 'folder', 'taskmanager', 'library', 'casino', 'portfolio'].forEach(name => {
         document.getElementById(`close-${name}`).onclick = () =>
             document.getElementById(`window-${name}`).hidden = true;
     });
