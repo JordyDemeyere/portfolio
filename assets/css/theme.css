@@ -127,8 +127,6 @@ body {
 .window-content {
     height: 300px;
     overflow-y: auto;
-    align-items: left;
-    justify-content: left;
 }
 
 .icon button {
